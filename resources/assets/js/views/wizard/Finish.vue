@@ -122,7 +122,7 @@ export default {
 
     created() {
         window.axios({
-            method: "PATCH",
+            method: "POST",
             url: url + "/wizard/finish",
         })
         .then((response) => {
