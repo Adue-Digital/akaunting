@@ -53,8 +53,7 @@ return [
     'purchases'             => 'Purchase|Purchases',
     'notifications'         => 'Notification|Notifications',
     'countries'             => 'Country|Countries',
-    'cities'                => 'Town/City|Towns/Cities',
-
+    'cities'                => 'Town / City|Towns / Cities',
     'welcome'               => 'Welcome',
     'banking'               => 'Banking',
     'general'               => 'General',
@@ -166,9 +165,8 @@ return [
     'amount_due'            => 'Amount due',
     'financial_year'        => 'Financial Year',
     'created'               => 'Created',
-    'state'                 => 'Province/State',
-    'zip_code'              => 'Postal/Zip code',
-
+    'state'                 => 'Province / State',
+    'zip_code'              => 'Postal / Zip Code',
     'card' => [
         'cards'                 => 'Card|Cards',
         'name'                  => 'Name on Card',
