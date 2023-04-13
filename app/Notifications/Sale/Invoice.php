@@ -66,6 +66,13 @@ class Invoice extends Notification
             $message->attach($this->storeDocumentPdfAndGetPath($this->invoice), [
                 'mime' => 'application/pdf',
             ]);
+
+            if($this->invoice->attachment != null)  {
+                foreach ($this->invoice->attachment as $attachment) {
+                    $attachmentPath = $attachment->getAbsolutePath();
+                    $message->attach($attachmentPath, ['mime' => $attachment->mime_type]);
+                }
+            }
         }
 
         return $message;
